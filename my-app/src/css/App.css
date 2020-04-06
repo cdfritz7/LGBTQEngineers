@@ -1,0 +1,29 @@
+.mycontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.align-item-center {
+  align-self: center;
+}
+
+.spaced_text {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.text_18pt {
+  font-size: 18pt;
+  font-family: RobotoMono;
+  color: #000000;
+}
+
+.text_24pt {
+  font-size: 24pt;
+  font-family: RobotoMono;
+  color: #000000;
+}
