@@ -14,7 +14,7 @@ class FrontPage extends Component {
         <div className="lineargradientrainbow135 fpcontainer">
           <div className="align-item-center">
             <h1 style={{fontFamily:"RobotoMonoB", fontSize:"60px"}} >
-              Club Name
+              LGBTQ Engineers
             </h1>
             <h2 style={{fontFamily:"RobotoMono", fontSize:"40px"}}>
               This is about what the club is about

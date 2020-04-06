@@ -7,7 +7,7 @@ import './css/PeoplePage.css';
 /*
   a card for displaying officer information and pictures
 */
-class MyCard extends Component {
+class PersonCard extends Component {
   constructor(props){
     super(props);
   }
@@ -45,10 +45,8 @@ class PeoplePage extends Component {
 
     for(x in people){
       let person = people[x];
-      console.log(person);
-      console.log(person["image"]);
       cards.push(
-        <MyCard name={person["name"]}
+        <PersonCard name={person["name"]}
                 position={person["position"]}
                 description={person["description"]}
                 image={person["image"]}

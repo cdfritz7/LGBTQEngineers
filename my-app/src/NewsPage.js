@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+
+import './css/NewsPage.css';
 
 class NewsCard extends Component {
   constructor(props){
@@ -8,21 +11,28 @@ class NewsCard extends Component {
   }
 
   render(){
+
+    var colors = ['#FF6663', '#FEB144', '#FDFD97', '#9EE09E', '#9EC1CF', '#CC99C9'];
+    var color = colors[this.props.color_idx % colors.length];
+
+    var button = null;
+    if(this.props.link)
+      button = <a href={this.props.link} className="npbutton"><Button style={{backgroundColor:color, borderColor:color, color:"black"}}>{this.props.link_name}</Button></a>
+
     return (
-      <Card>
-        <Card.Header>News Title</Card.Header>
+      <Card className='npcard'>
+        <Card.Header style={{backgroundColor:color}} className='npcardtitle'>{this.props.title}</Card.Header>
         <Card.Body>
-          <Card.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <Card.Text className='npcardtext'>
+            {this.props.text}
           </Card.Text>
         </Card.Body>
-        <Card.Footer>{this.props.date}</Card.Footer>
+        <Card.Footer>
+          <div className="npcardfooter">
+            <div className='npcarddate'>{this.props.date}</div>
+            <div className='npcardbutton'>{button}</div>
+          </div>
+        </Card.Footer>
       </Card>
     )
   }
@@ -32,15 +42,26 @@ class NewsPage extends Component {
 
   render(){
 
-    var card_list = []
-    for(var i = 0; i < 10; i++){
-      card_list.push(<NewsCard date={22}/>);
+    const data = require('./data/NewsPageData.json');
+    var news = data['news'];
+    var cards = [];
+    var x;
+
+    for(x in news){
+      let blurb = news[x];
+      cards.push(
+        <NewsCard title={blurb["title"]}
+                  text={blurb["text"]}
+                  date={blurb["date"]}
+                  link={blurb["link"]}
+                  link_name={blurb["link_name"]}
+                  color_idx={x}/>
+      )
     }
-    //read in news JSON
 
     return(
-      <div>
-        {card_list}
+      <div className="npcontainer">
+        {cards}
       </div>
     )
   }

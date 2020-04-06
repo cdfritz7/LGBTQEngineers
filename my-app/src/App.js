@@ -10,6 +10,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 
+import {FaDraftingCompass} from 'react-icons/fa'
 import FrontPage from "./FrontPage.js"
 import AboutPage from "./AboutPage.js"
 import PeoplePage from "./PeoplePage.js"
@@ -60,7 +61,7 @@ class App extends Component {
                      <div className="mycontainer">
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/News">News</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/About">About</NavLink></Nav.Link>
-                        <Nav.Link className="align-item-center"><NavLink className="spaced_text text_24pt" exact to="/"><Image src={flag} rounded/></NavLink></Nav.Link>
+                        <Nav.Link className="align-item-center"><NavLink className="spaced_text text_24pt" exact to="/"><FaDraftingCompass /></NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/People">People</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/Contact">Join</NavLink></Nav.Link>
                      </div>

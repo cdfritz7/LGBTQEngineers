@@ -1,0 +1,32 @@
+.npcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.npcard {
+  width: 75vw;
+  margin: 40px;
+}
+
+.npcardtitle{
+  font-size:30px;
+  font-family: RobotoMonoB;
+}
+
+.npcardtext{
+  font-size:20px;
+  font-family:RobotoMono;
+}
+
+.npcarddate{
+  font-size:20px;
+  color: gray;
+  font-family:RobotoMono;
+}
+
+.npcardfooter{
+  display: flex;
+  justify-content: space-between;
+}
