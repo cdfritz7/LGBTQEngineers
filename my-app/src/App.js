@@ -62,8 +62,8 @@ class App extends Component {
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/News">News</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/About">About</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_24pt" exact to="/"><FaDraftingCompass /></NavLink></Nav.Link>
-                        <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/People">People</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/Contact">Join</NavLink></Nav.Link>
+                        <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/People">People</NavLink></Nav.Link>
                      </div>
                     </Nav>;
     }
@@ -83,8 +83,8 @@ class App extends Component {
               <Route exact path="/" component={FrontPage}/>
               <Route path="/News" component={NewsPage}/>
               <Route path="/About" component={AboutPage}/>
-              <Route path="/People" component={PeoplePage}/>
               <Route path="/Contact" component={ContactPage}/>
+              <Route path="/People" component={PeoplePage}/>
             </div>
           </BrowserRouter>
         </div>

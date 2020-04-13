@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 import './css/FrontPage.css';
+import './css/common.css';
 
 class FrontPage extends Component {
   render(){

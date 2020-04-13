@@ -1,11 +1,15 @@
-.cardcontainer {
+.pcardcontainer {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
 }
 
-.cardclass {
+.pcardclass {
   align-self: center;
   margin: 2vw;
+  width: 25rem;
+  border-width: 30px;
+  border-radius: 2px;
+  border-color: black;
 }

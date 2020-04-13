@@ -1,0 +1,40 @@
+:root{
+  --title-font: 'RobotoMonoB';
+  --body-font: 'RobotoMono';
+}
+
+.lineargradient-rainbow135 {
+  background: linear-gradient(135deg, #FF6663 0%,#FF6663 16.67%,0%,#FEB144 16.67%,#FEB144 33.34%,0%,#FDFD97 33.34%,#FDFD97 50.01%,0%,#9EE09E 50.01%,#9EE09E 66.68%,0%,#9EC1CF 66.68%,#9EC1CF 83.35%,0%,#CC99C9 100%);;
+}
+
+.lineargradientrainbow135 {
+  background: linear-gradient(135deg, #FF6663 0%,#FF6663 16.67%,0%,#FEB144 16.67%,#FEB144 33.34%,0%,#FDFD97 33.34%,#FDFD97 50.01%,0%,#9EE09E 50.01%,#9EE09E 66.68%,0%,#9EC1CF 66.68%,#9EC1CF 83.35%,0%,#CC99C9 100%);;
+}
+
+.lineargradientrainbow45 {
+  background: linear-gradient(45deg, #FF6663 0%,#FF6663 16.67%,0%,#FEB144 16.67%,#FEB144 33.34%,0%,#FDFD97 33.34%,#FDFD97 50.01%,0%,#9EE09E 50.01%,#9EE09E 66.68%,0%,#9EC1CF 66.68%,#9EC1CF 83.35%,0%,#CC99C9 100%);;
+}
+
+.my-container{
+  display:flex;
+  justify-content: center;
+}
+
+.align-item-center{
+  align-items: center;
+}
+
+.my-title-large{
+  font-family: var(--title-font);
+  font-size: 60px;
+}
+
+.my-title{
+  font-family: var(--title-font);
+  font-size: 30px;
+}
+
+.my-text{
+  font-family: var(--body-font);
+  font-size: 20px;
+}

@@ -10,16 +10,6 @@
   margin: 40px;
 }
 
-.npcardtitle{
-  font-size:30px;
-  font-family: RobotoMonoB;
-}
-
-.npcardtext{
-  font-size:20px;
-  font-family:RobotoMono;
-}
-
 .npcarddate{
   font-size:20px;
   color: gray;
@@ -29,4 +19,48 @@
 .npcardfooter{
   display: flex;
   justify-content: space-between;
+}
+
+/*overrides for coloring the react-bootstrap pagination bar*/
+.pagination > li > a{
+    background-color: white;
+    color: #9EC1CF;
+}
+
+.pagination > li > span{
+  background-color: white;
+  color:#9EC1CF;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover{
+    color: white;
+    background-color: #CC99C9;
+    border-color: #CC99C9;
+}
+
+.pagination > .active > a{
+    color: white;
+    background-color: #9EC1CF !Important;
+    border: solid 1px #9EC1CF !Important;
+}
+
+.pagination > .active > a:hover{
+    background-color: #9EC1CF !Important;
+    border: solid 1px #9EC1CF;
+}
+
+.pagination > .active > span
+{
+    color: white;
+    background-color: #9EC1CF !Important;
+    border: solid 1px #9EC1CF !Important;
+}
+
+.pagination > .active > span:hover
+{
+    background-color: #9EC1CF !Important;
+    border: solid 1px #9EC1CF;
 }
