@@ -18,6 +18,7 @@ import ContactPage from "./ContactPage.js"
 import NewsPage from "./NewsPage.js"
 
 import flag from './imgs/flag.png';
+import logo from './imgs/logo.png'
 import './css/App.css';
 
 class App extends Component {
@@ -61,7 +62,7 @@ class App extends Component {
                      <div className="mycontainer">
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/News">News</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/About">About</NavLink></Nav.Link>
-                        <Nav.Link className="align-item-center"><NavLink className="spaced_text text_24pt" exact to="/"><FaDraftingCompass /></NavLink></Nav.Link>
+                        <Nav.Link className="align-item-center"><NavLink className="spaced_text text_24pt" exact to="/"><img src={logo} width="60" height="60" alt="Home" /></NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/Contact">Join</NavLink></Nav.Link>
                         <Nav.Link className="align-item-center"><NavLink className="spaced_text text_18pt" to="/People">People</NavLink></Nav.Link>
                      </div>

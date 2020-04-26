@@ -24,7 +24,7 @@ class FrontPage extends Component {
         </div>
 
         <div className="fpcontainer">
-          <h3 className="align-item-center"> Some stuff about the website </h3>
+          <h3 className="align-item-center">LGBTQ+ Engineers intends to recruit, retain, and graduate LGBTQ+ students and allies by providing a safe space for discussion, awareness, and support.</h3>
         </div>
 
         <div className="lineargradientrainbow45 fpcontainer">
