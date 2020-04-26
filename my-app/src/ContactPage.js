@@ -3,9 +3,39 @@ import React, {Component} from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 import './css/ContactPage.css';
 import './css/common.css';
+
+class ContactCard extends Component {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+
+    var colors = ['#FF6663', '#FEB144', '#FDFD97', '#9EE09E', '#9EC1CF', '#CC99C9'];
+    var color = colors[this.props.color_idx % colors.length];
+
+    return(
+      <div className="contactcard">
+        <Card>
+          <Card.Header style={{backgroundColor:color, textAlign: "center"}}
+                       className="my-title">
+                       {this.props.title}
+          </Card.Header>
+          <Card.Body>
+            <Card.Title style={{textAlign: "center"}}
+                        className="my-text">
+                        {this.props.text}
+            </Card.Title>
+          </Card.Body>
+        </Card>
+      </div>
+    )
+  }
+}
 
 class ContactPage extends Component {
   render(){
@@ -24,26 +54,11 @@ class ContactPage extends Component {
             </div>
         </Jumbotron>
 
-        <Form>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
-
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form>
+        <div className="ccontainer">
+          <ContactCard title="Email Us" text="this.my@email.com" color_idx="1"/>
+          <ContactCard title="Follow Us" text="lorem ipsum" color_idx="2"/>
+          <ContactCard title="Text Us?" text="lorem ipsum" color_idx="3"/>
+        </div>
       </div>
     );
   }

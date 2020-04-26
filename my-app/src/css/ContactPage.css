@@ -1,0 +1,11 @@
+.ccontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactcard {
+  width: 400px;
+  margin: 40px;
+}
