@@ -4,72 +4,54 @@ data = {}
 data['people'] = []
 
 data['people'].append({
-    'name':'John Doe',
-    'position':'officer',
-    'description':'lorem ipsum dolor sit amut',
+    'name':'Adriana Pedroza',
+    'position':'President',
+    'description':'4th year ECE Student',
     'image':'./imgs/profile_stock.jpg',
     'link':'//google.com',
     'link_name':'link'
 })
 
 data['people'].append({
-    'name':'John Doe 2',
-    'position':'officer',
-    'description':'idk',
+    'name':'Andrea Vigil',
+    'position':'Treasurer',
+    'description':'3rd Year MechE Student',
     'image':'./imgs/profile_stock.jpg',
     'link':'//google.com',
     'link_name':'link'
 })
 
 data['people'].append({
-    'name':'John Doe 3',
-    'position':'officer',
-    'description':'idk',
+    'name':'Shelby Hobohm',
+    'position':'Socials Coordinator',
+    'description':'Double Major in MechE/Govt',
     'image':'./imgs/profile_stock.jpg',
     'link':'//google.com',
     'link_name':'link'
 })
 
 data['people'].append({
-    'name':'John Doe 4',
-    'position':'officer',
-    'description':'idk',
+    'name':'Carson Reed',
+    'position':'Corporate Liaison',
+    'description':'3rd Year ChemE Student',
     'image':'./imgs/profile_stock.jpg',
     'link':'//google.com',
     'link_name':'link'
 })
 
 data['people'].append({
-    'name':'John Doe 5',
-    'position':'officer',
-    'description':'idk',
+    'name':'Hadar Rozenberg',
+    'position':'Social Media Coordinator',
+    'description':'4th Year ECE Student',
     'image':'./imgs/profile_stock.jpg',
     'link':'//google.com',
     'link_name':'link'
 })
 
 data['people'].append({
-    'name':'John Doe 6',
-    'position':'officer',
-    'description':'idk',
-    'image':'./imgs/profile_stock.jpg',
-    'link':None,
-    'link_name':'link'
-})
-
-data['people'].append({
-    'name':'John Doe 7',
-    'position':'officer',
-    'description':'idk',
-    'image':'./imgs/profile_stock.jpg',
-    'link':'//google.com',
-    'link_name':'link'
-})
-
-data['people'].append({
-    'name':'John Doe 8',
-    'position':'officer',
-    'description':'idk',
+    'name':'Aspen Mixon',
+    'position':'Secretary',
+    'description':'2nd Year ECE Student',
     'image':'./imgs/profile_stock.jpg',
     'link':None,
     'link_name':'link'
