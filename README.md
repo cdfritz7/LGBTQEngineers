@@ -19,3 +19,8 @@
  ### Other pages
  To edit these pages, simply edit the corresponding `.js` files in
  `my-app/src/`
+
+## Help
+This website was made by Connor Fritz, as part of a series of projects done under
+the purview of the non-profit Vidare. For any questions contact him at
+cdfritz7@gmail.com 
